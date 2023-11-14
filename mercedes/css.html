@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon CSS</title>
+    <link rel="stylesheet" href="../assets/css/css.css">
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+</head>
+<body>
+    <div class="entete">
+        <h1>Mercedes</h1>
+    </div>
+    <h3>PAGE D'ACCUEIL</h3>
+    <div class="zone">
+    <pre class="prettyprint">
+        <p class="size">
+        body {
+            background-color: black;
+        }
+        h1 {
+            font-family: "Dela Gothic One";
+        }
+        h3 {
+            font-family: "Dela Gothic One";
+            color: #fff;
+            text-align: center;
+        }
+        .entete {
+            background-color: black;
+            color: #fff;
+            padding: 7px; 
+            text-align: center;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana;
+            font-size: 20px;
+        }
+        .home{
+            background-color: black;
+            text-align: center;
+        }
+        .texthome{
+            color: #fff;
+            text-decoration: none;
+        }
+    </p>
+    </pre>
+    </div>
+    <h3>PREPARATEUR</h3>
+    <div class="zone">
+    <pre class="prettyprint">
+        <p class="size">
+            /** base **/
+            .base {
+                font-family: sans-serif;
+                background-image: url(../img/grey.jpg);
+                height: 100%;
+            }
+            
+            /**Sans balise**/
+            html {
+                height: 100%;
+            }
+            
+            body {
+                margin: 0;
+            }
+            
+            h1 {
+                font-family: "Dela Gothic One";
+            }
+            
+            h3 {
+                font-family: "Oswald";
+                font-size: 30px;
+            }
+            
+            p {
+                color: white;
+            }
+            
+            
+            /** haut du site **/
+            .banniere {
+                background-color: black; 
+                color: #fff;
+                padding: 10px;
+                text-align: center; 
+            }
+            
+            .entete {
+                background-color: black;
+                color: #fff;
+                padding: 7px; 
+                text-align: center;
+                font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana;
+                font-size: 20px;
+            }
+            
+            .buttonstyle1 {
+                color: white;
+                padding: 20%;
+                text-decoration: none;
+            }
+            
+            .buttonstyle1:active {
+                color: rgb(217, 255, 0);
+            }
+            
+            
+            /** corp du site**/
+            .carre-conteneur {
+                display: flex;
+                justify-content: space-between;
+            }
+            
+            .colonne-gauche, 
+            .colonne-droite {
+                width: 25%;
+                background-color: black;
+                border-radius: 5px;
+                text-align: justify;
+                margin: 20px 10px 0 10px;
+                padding-top: 10px;
+            }
+            
+            .brabus{
+                width: 100%;
+            }
+            
+            .carre {
+                width: 40%;
+                background-color: rgb(76, 74, 74);
+                border-radius: 5px;
+                margin-top: 20px;
+                text-align: center;
+            }
+            
+            .video {
+                width:100%;
+                height:50%;
+            }
+            
+            .pamg{
+                margin-left: 5%;
+                margin-right: 5%;
+            }
+            
+            .pbrabus{
+                margin-left: 5%;
+                margin-right: 5%;
+                color: #fff;
+            }
+            
+            .colonne {
+                font-family: "Oswald";
+                font-size: 30px;
+                color: #fff;
+                text-align: center;
+            }
+            @media only screen and (max-width: 767px) {
+                .carre-conteneur {
+                  flex-direction: column;
+                }
+                .colonne-gauche, .colonne-droite {
+                  width: 90%;
+                  margin: 5%;
+                }
+                .carre {
+                  width: 90%;
+                  margin: 5%;
+                }
+                .video {
+                  height: 200px;
+                }
+                .pamg, .pbrabus {
+                  margin: 5%;
+                }
+                .buttonstyle1 {
+                    color: white;
+                    padding: 10%;
+                    text-decoration: none;
+                    font-size: 13px;
+                }
+              }
+    </p>
+    </pre>
+    </div>
+    <div class="home">
+        <a href="../index.html" class="texthome">HOME</a>
+    </div>
+</body>
+</html>
