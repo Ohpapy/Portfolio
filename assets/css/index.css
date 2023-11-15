@@ -143,10 +143,10 @@ li > a:only-child:after { content: ''; }
   position: relative;
 }  
 .carre1:hover{
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 .carre2:hover{
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 .carre-conteneur {
     display: flex;
@@ -179,4 +179,38 @@ li > a:only-child:after { content: ''; }
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
+}
+
+.linkedin{
+  width: 100px;
+  height: 100px; 
+  background-image: url(../img/linkedin.png);
+  background-size: cover; 
+  transition: background-image 0.3s ease-in-out;
+  transition: transform 0.3s ease;
+}
+.linkedin:hover {
+  background-image: url(../img/linkedin2.png);
+  transform: scale(1.1);
+}
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.inst{
+  text-decoration: none;
+  display: block;
+}
+.insta{
+  width: 100px;
+  height: 100px; 
+  background-image: url(../img/insta1.png);
+  background-size: cover; 
+  transition: background-image 0.3s ease-in-out;
+  transition: transform 0.3s ease;
+}
+.insta:hover {
+  background-image: url(../img/insta2.png);
+  transform: scale(1.1);
 }
