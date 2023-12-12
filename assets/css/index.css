@@ -201,6 +201,8 @@ li > a:only-child:after { content: ''; }
 .inst{
   text-decoration: none;
   display: block;
+  margin-right: 20px;
+  margin-left: 20px;
 }
 .insta{
   width: 100px;
