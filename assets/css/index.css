@@ -1,5 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 @import url(https://fonts.googleapis.com/css?family=Bree+Serif);
+@import "nib";
 
 body {
   background: #212121;
@@ -16,6 +17,11 @@ h1 {
   color: #fff;
   font-family: "Poppins";
 } 
+
+h4 {
+  font-size: 20px;
+  text-align: center;
+}
 
 h3 {
   font-size: 30px;
@@ -215,4 +221,27 @@ li > a:only-child:after { content: ''; }
 .insta:hover {
   background-image: url(../img/insta2.png);
   transform: scale(1.1);
+}
+.container4 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  margin: 30px auto;
+  border: 1px solid #ccc;
+  padding: 5px;
+}
+
+.text4 {
+  width: 60%;
+  box-sizing: border-box;
+  padding-right: 20px;
+  font-family: Arial, sans-serif;
+  font-size: 60%;
+  line-height: 1.2;
+}
+
+.image4 {
+  width: 40%;
+  box-sizing: border-box;
 }
