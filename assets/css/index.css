@@ -188,8 +188,8 @@ li > a:only-child:after { content: ''; }
 }
 
 .linkedin{
-  width: 100px;
-  height: 100px; 
+  width: 80px;
+  height: 80px; 
   background-image: url(../img/linkedin.png);
   background-size: cover; 
   transition: background-image 0.3s ease-in-out;
@@ -211,8 +211,8 @@ li > a:only-child:after { content: ''; }
   margin-left: 20px;
 }
 .insta{
-  width: 100px;
-  height: 100px; 
+  width: 80px;
+  height: 80px; 
   background-image: url(../img/insta1.png);
   background-size: cover; 
   transition: background-image 0.3s ease-in-out;

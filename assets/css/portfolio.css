@@ -1,0 +1,96 @@
+body { 
+    font-family:Georgia;
+    background: #212121;
+    font-size:22px;
+    line-height: 32px;
+    color: #ffffff;
+    word-wrap:break-word !important;
+    font-family: 'Open Sans', sans-serif;
+}
+.page-header {
+    text-align: center;
+    color: black;
+    text-shadow: 1px 1px 0 #000;
+    background-color: #ffea00;
+    height: 100px;
+    padding-top: 50px;
+    bottom: 0;
+    border-radius: 8px;
+    }
+
+.titre {
+    font-size: 100px;
+    margin: 0;
+    text-align: center;
+}
+
+.bvn{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+    text-align: center;
+    margin-bottom: 5%;
+}
+.reseaux{
+    background-color: aqua;
+    text-align: center;
+    height: 300px;
+    margin: 0 20px;
+}
+
+.communication{
+    background-color: red;
+    text-align: center; 
+    height: 300px; 
+    margin: 0 20px;
+}
+
+.travaux{
+    background-color: aqua; 
+    text-align: center; 
+    height: 300px; 
+    margin: 0 20px;
+}
+.modal {
+    background-color: white;
+    color: black;
+    padding: 20px;
+    width: 60%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: 30px auto;
+    z-index: 101;
+    display: none;
+}
+
+.modal-bg {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: black;
+    opacity: .5;
+    z-index: 100;
+    display: none;
+}
+
+.modal.active,
+.modal-bg.active {
+    display: block;
+}
+.homebas{
+    background-color: #ffea00;
+    /**border: 3px solid #a93917;**/
+    text-align: center;
+    margin-top: 3%;
+}
+
+.homebastext{
+    text-decoration: none;
+    color: black;
+}
