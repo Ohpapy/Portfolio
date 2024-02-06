@@ -45,6 +45,12 @@ body {
     margin: 0 20px;
 }
 
+.html{
+    background-color: orange;
+    text-align: center; 
+    height: 300px; 
+    margin: 0 20px;
+}
 .travaux{
     background-color: aqua; 
     text-align: center; 
@@ -52,8 +58,8 @@ body {
     margin: 0 20px;
 }
 .modal {
-    background-color: white;
-    color: black;
+    background-color: #212121;
+    color: white;
     padding: 20px;
     width: 60%;
     position: absolute;
@@ -94,3 +100,42 @@ body {
     text-decoration: none;
     color: black;
 }
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: #444444;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #2d2d2d;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #000000; 
+  }
+
+  .bouton-lien {
+    background-color: #ffea00;
+    border: 0.2px solid #ffea00;
+    border-radius: 5px;
+    padding: 3px;
+    color: rgb(0, 0, 0);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 100%;
+    text-align: right;
+    text-decoration: none;
+  }
+
+  .titre-modal{
+    text-align: right;
+  }
+  .liensite{
+    text-decoration: none;
+    color: #ffea00;
+  }
+  .liensite:hover{
+    color: #ffffff;
+  }
+  .img {
+    width: 100%;
+    height: auto;
+  }

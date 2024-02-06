@@ -35,3 +35,19 @@ closeModalcomm.addEventListener('click', function() {
     const modalBg = document.querySelector('#modal-bg');
     modalBg.classList.remove('active');
 });
+
+const html = document.querySelector('#html');
+html.addEventListener('click', function() {
+    const modalhtml = document.querySelector('#modal-html');
+    modalhtml.classList.add('active');
+    const modalBg = document.querySelector('#modal-bg');
+    modalBg.classList.add('active');
+});
+
+const closeModalhtml = document.querySelector('#close-html');
+closeModalhtml.addEventListener('click', function() {
+    const modalhtml = document.querySelector('#modal-html');
+    modalhtml.classList.remove('active');
+    const modalBg = document.querySelector('#modal-bg');
+    modalBg.classList.remove('active');
+});
