@@ -70,6 +70,7 @@ body {
     margin: 30px auto;
     z-index: 101;
     display: none;
+    overflow-y: auto;
 }
 
 .modal-bg {
