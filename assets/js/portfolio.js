@@ -4,6 +4,10 @@ $('#carousel').slick({
     slidesToScroll: 3,
 });
 
+if (window.matchMedia("(max-width: 768px)").matches) {
+    $('.single-item').slick();
+}
+
 const reseau = document.querySelector('#reseau');
 reseau.addEventListener('click', function() {
     const modalReseau = document.querySelector('#modal-reseau');
