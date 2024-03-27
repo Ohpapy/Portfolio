@@ -118,6 +118,12 @@ li > a:only-child:after { content: ''; }
     color: #ffffff;
 }
 
+.textebvn{
+  font-family: "Poppins";
+  font-size: 40px;
+  color: #ffffff;
+  text-align: center;
+}
 .logo{
   text-align: center;
 }
@@ -188,8 +194,8 @@ li > a:only-child:after { content: ''; }
 }
 
 .linkedin{
-  width: 80px;
-  height: 80px; 
+  width: 60px;
+  height: 60px; 
   background-image: url(../img/linkedin.png);
   background-size: cover; 
   transition: background-image 0.3s ease-in-out;
@@ -211,8 +217,8 @@ li > a:only-child:after { content: ''; }
   margin-left: 20px;
 }
 .insta{
-  width: 80px;
-  height: 80px; 
+  width: 60px;
+  height: 60px; 
   background-image: url(../img/insta1.png);
   background-size: cover; 
   transition: background-image 0.3s ease-in-out;
@@ -315,6 +321,7 @@ li > a:only-child:after { content: ''; }
           margin: 0 auto;
           letter-spacing: .15em;
           animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+
         }
 
         @keyframes typing {
