@@ -9,6 +9,9 @@ body {
   color: #ffffff;
   word-wrap:break-word !important;
   font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   }
 
 h1 {
@@ -53,7 +56,7 @@ p {
 }
 
 nav {
-  margin: 50px 0;
+  margin: 5px 0;
   background-color: #ffea00;
   text-align: center;
 }
@@ -114,10 +117,14 @@ li > a:only-child:after { content: ''; }
 
 .family{
     font-family: "Poppins";
+    margin-top: 10%;
     height: auto;
     color: #ffffff;
+    font-size: 70px;
 }
-
+.smaller-text {
+  font-size: 70%;
+}
 .textebvn{
   font-family: "Poppins";
   font-size: 40px;
@@ -126,6 +133,13 @@ li > a:only-child:after { content: ''; }
 }
 .logo{
   text-align: center;
+  position: absolute;
+  top: 10%;
+  right: 10px;
+}
+.logoimg {
+  width: 50px;
+  height: auto;
 }
 .colonne {
   font-family: "Oswald";
@@ -191,6 +205,21 @@ li > a:only-child:after { content: ''; }
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
+}
+.centered-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 25vh;
+  text-align: center;
+  width: 60%;
+  margin-top: 10%;
+}
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .linkedin{
