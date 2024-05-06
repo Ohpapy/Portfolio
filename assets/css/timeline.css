@@ -85,7 +85,9 @@ display: table;
 /** timeline panels **/
 
 .timeline li .timeline-panel {
-width: 46%;
+width: 41%;
+margin-left: 5%;
+margin-right: 5%;
 float: left;
 background: #fff;
 border: 1px solid #d4d4d4;

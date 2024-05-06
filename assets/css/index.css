@@ -5,7 +5,6 @@
 body {
   background: #212121;
   font-size:22px;
-  line-height: 32px;
   color: #ffffff;
   word-wrap:break-word !important;
   font-family: 'Open Sans', sans-serif;
@@ -122,9 +121,6 @@ li > a:only-child:after { content: ''; }
     color: #ffffff;
     font-size: 70px;
 }
-.smaller-text {
-  font-size: 70%;
-}
 .textebvn{
   font-family: "Poppins";
   font-size: 40px;
@@ -214,7 +210,7 @@ li > a:only-child:after { content: ''; }
   height: 25vh;
   text-align: center;
   width: 60%;
-  margin-top: 10%;
+  margin-top: 5%;
 }
 .center{
   display: flex;
@@ -348,7 +344,6 @@ li > a:only-child:after { content: ''; }
           border-right: .15em solid orange;
           white-space: nowrap;
           margin: 0 auto;
-          letter-spacing: .15em;
           animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
 
         }
