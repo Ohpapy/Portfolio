@@ -32,27 +32,27 @@ body {
     margin-bottom: 5%;
 }
 .reseaux{
-    background-color: aqua;
+    background-color: #212121;
     text-align: center;
     height: 300px;
     margin: 0 20px;
 }
 
 .communication{
-    background-color: red;
+    background-color: #212121;
     text-align: center; 
     height: 300px; 
     margin: 0 20px;
 }
 
 .html{
-    background-color: orange;
+    background-color: #212121;
     text-align: center; 
     height: 300px; 
     margin: 0 20px;
 }
 .travaux{
-    background-color: aqua; 
+    background-color: #212121; 
     text-align: center; 
     height: 300px; 
     margin: 0 20px;
