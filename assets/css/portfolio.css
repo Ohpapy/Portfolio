@@ -98,10 +98,11 @@ body {
     display: block;
 }
 .homebas{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
     background-color: #ffea00;
-    /**border: 3px solid #a93917;**/
     text-align: center;
-    margin-top: 3%;
 }
 
 .homebastext{
