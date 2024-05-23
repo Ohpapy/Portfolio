@@ -38,11 +38,18 @@ body {
     margin: 0 20px;
 }
 
-.communication{
+.php{
     background-color: #212121;
     text-align: center; 
     height: 300px; 
     margin: 0 20px;
+}
+
+.comm{
+  background-color: #212121;
+  text-align: center; 
+  height: 300px; 
+  margin: 0 20px;
 }
 
 .html{
