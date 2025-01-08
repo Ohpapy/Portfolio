@@ -71,3 +71,19 @@ closeModalcomm.addEventListener('click', function() {
     const modalBg = document.querySelector('#modal-bg');
     modalBg.classList.remove('active');
 });
+
+const bl = document.querySelector('#bl');
+bl.addEventListener('click', function() {
+    const modalbl = document.querySelector('#modal-bl');
+    modalbl.classList.add('active');
+    const modalBg = document.querySelector('#modal-bg');
+    modalBg.classList.add('active');
+});
+
+const closeModalbl = document.querySelector('#close-bl');
+closeModalbl.addEventListener('click', function() {
+    const modalbl = document.querySelector('#modal-bl');
+    modalbl.classList.remove('active');
+    const modalBg = document.querySelector('#modal-bg');
+    modalBg.classList.remove('active');
+});

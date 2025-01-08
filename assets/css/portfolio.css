@@ -58,6 +58,12 @@ body {
     height: 300px; 
     margin: 0 20px;
 }
+.bl{
+  background-color: #212121;
+  text-align: center; 
+  height: 300px; 
+  margin: 0 20px;
+}
 .travaux{
     background-color: #212121; 
     text-align: center; 
