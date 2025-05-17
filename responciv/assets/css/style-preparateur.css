@@ -1,0 +1,201 @@
+/** base **/
+.base {
+    font-family: sans-serif;
+    background-image: url(../img/grey.jpg);
+    min-height: 100vh;
+}
+
+/**Sans balise**/
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: "Dela Gothic One";
+    text-align: center;
+    color: #fff;
+    margin-top: 30px;
+}
+
+h3 {
+    font-family: "Oswald";
+    font-size: 30px;
+    text-align: center;
+    color: #fff;
+}
+
+p {
+    color: white;
+}
+
+/** haut du site **/
+.banniere {
+    background-color: black; 
+    color: #fff;
+    padding: 10px;
+    text-align: center; 
+}
+
+.entete {
+    background-color: black;
+    color: #fff;
+    padding: 7px; 
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+}
+
+.buttonstyle1 {
+    color: white;
+    padding: 20%;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+    background: #222;
+    transition: background 0.2s, color 0.2s;
+    font-size: 18px;
+}
+
+.buttonstyle1:active,
+.buttonstyle1:focus {
+    color: rgb(217, 255, 0);
+    background: #444;
+    outline: 2px solid #ffea00;
+    outline-offset: 2px;
+}
+
+/** corp du site**/
+.carre-conteneur {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.colonne-gauche, 
+.colonne-droite {
+    width: 25%;
+    background-color: black;
+    border-radius: 5px;
+    text-align: justify;
+    margin: 20px 10px 0 10px;
+    padding-top: 10px;
+}
+
+.brabus {
+    width: 100%;
+}
+
+.carre {
+    width: 40%;
+    background-color: rgb(76, 74, 74);
+    border-radius: 5px;
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.video {
+    width: 100%;
+    height: 50%;
+    max-width: 800px;
+    margin: 0 auto;
+    display: block;
+    border-radius: 8px;
+}
+
+.pamg, .pbrabus {
+    margin-left: 5%;
+    margin-right: 5%;
+    color: #fff;
+}
+
+.colonne {
+    font-family: "Oswald";
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+}
+
+img, video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: #444444;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #2d2d2d;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: #000000; 
+}
+
+/* Responsive */
+@media only screen and (max-width: 900px) {
+    .colonne-gauche, .colonne-droite {
+        width: 45%;
+        margin: 10px 2.5%;
+    }
+    .carre {
+        width: 90%;
+        margin: 10px auto;
+    }
+    .video {
+        height: 300px;
+        max-width: 100%;
+    }
+    .buttonstyle1 {
+        font-size: 15px;
+        padding: 10%;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .carre-conteneur {
+        flex-direction: column;
+        align-items: center;
+    }
+    .colonne-gauche, .colonne-droite {
+        width: 90%;
+        margin: 5% auto;
+    }
+    .carre {
+        width: 90%;
+        margin: 5% auto;
+    }
+    .video {
+        height: 200px;
+    }
+    .pamg, .pbrabus {
+        margin: 5%;
+    }
+    .buttonstyle1 {
+        font-size: 13px;
+        padding: 8%;
+    }
+    h1 {
+        font-size: 28px;
+        margin-top: 15px;
+    }
+    .entete {
+        font-size: 16px;
+        padding: 5px;
+    }
+}
+
+/* Accessibilité */
+a, button {
+    touch-action: manipulation;
+    outline: none;
+}
+a:focus, button:focus {
+    outline: 2px solid #ffea00;
+    outline-offset: 2px;
+}

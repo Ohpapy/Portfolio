@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="../assets/js/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="../assets/js/slick/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="../assets/css/portfolio.css"/>
+</head>
+<body>
+    <div class="page-header">
+        <h1 class="titre">Portfolio</h1>    
+    </div>
+    <div class="bvn">
+        <p>Bienvenue sur mon portfolio !</p>
+        <p>Vous pourrez retrouver ici les différents projets que j'ai realisé ! </p>
+    </div>
+    <div id="carousel">
+        <div class="reseaux" id="reseau">
+            <img src="../assets/img/wireless-network-wifi-628x353 (1).png" alt="Réseau materiel" class="img" style="text-align: center;">
+            <div style="text-align: center; width: 100%;">Réseaux</div>
+        </div>
+        <div class="php" id="php">
+            <img src="../assets/img/php.png" alt="php" class="img" style="text-align: center;">
+            <div style="text-align: center; width: 100%;">PHP</div>
+        </div>
+        <div class="html" id="html">
+            <img src="../assets/img/apprendre-html-et-css.jpg" alt="HTML & CSS" class="img" style="text-align: center;">
+            <div style="text-align: center; width: 100%;">Html & CSS</div>
+        </div>
+        <div class="comm" id="comm">
+            <img src="../assets/img/istockphoto-1297171607.png" alt="Communication" class="img" style="text-align: center;">
+            <div style="text-align: center; width: 100%;">Communication</div>
+        </div>
+        <div class="bl" id="bl">
+            <img src="../assets/img/bl.png" alt="Boucle locale" class="img" style="text-align: center;">
+            <div style="text-align: center; width: 100%;">Boucle Locale</div>
+        </div>
+        <div class="pentest" id="pentest">
+            <img src="../assets/img/pentest.png" alt="Teste d'intrusion" class="img" style="text-align: center;">
+            <div style="text-align: center; width: 100%;">Test d'intrusion</div>
+        </div>
+    </div>
+    </div>
+    <div class="modal" id="modal-reseau">
+        <div class="modal-haut">
+            <h2>Reseau</h2> 
+        </div>
+        <div style="display: flex;">
+            <div style="width: 40%;">
+                <h2>Projet 1</h2>
+                <p>
+                    En Réseaux, j'ai pu apprendre les différents types de configuration ainsi que le paramétrage des différents équipements. Nous avons principalement vu le matériel Cisco. Nous pouvons voir ici le lien vers un fichier .pkt qui est l'extension du logiciel Cisco Packet Tracer qui nous permet de simuler un réseau sans aucun matériel. Dans ce fichier, vous trouverez la configuration d'un réseau pour une petite entreprise (avec une connexion avec un serveur web et dns). Pour le réseau local les ip sont distribuée par un serveur DHCP. Le réseau local de l'entreprise est protègé par un fire wall qui ce nomme ASA 5505
+                </p>
+                <a href="SAE21.pkt" class="liensite"><img src="../assets/img/telecharger.png" alt="lien du fichier pkt"></a>
+                <br>
+                <br>
+                <h2>Projet 2</h2>
+                <p>
+                    Dans ce projet multi-site, nous avons configuré deux routeurs, quatre MLS (Multi-Layer Switches), quatre switchs et un ASA (Adaptive Security Appliance). Les routeurs ont été configurés pour assurer la connectivité entre les différents sites, tandis que les MLS et les switchs ont été utilisés pour gérer le trafic interne et optimiser les performances du réseau.
+                    <br>
+                    <br>
+                    L'ASA a été mis en place pour fournir une couche supplémentaire de sécurité en filtrant le trafic entrant et sortant, protégeant ainsi le réseau contre les menaces externes. Cependant, la configuration détaillée de l'ASA n'est pas incluse ici.
+                    <br>
+                    <br>
+                    Ce projet m’a également permis d’approfondir plusieurs aspects liés à la cybersécurité, notamment la compréhension des mécanismes de filtrage du trafic, la gestion des accès, ainsi que les bonnes pratiques pour sécuriser un réseau. J’ai ainsi pu acquérir des notions essentielles pour protéger efficacement un site contre les différentes menaces potentielles.
+                </p>
+                <a href="SAE31.pkt" class="liensite"><img src="../assets/img/telecharger.png" alt="lien du fichier pkt"></a>
+            </div>
+            <div style="width: 58%; background-color: black; border-radius: 15px;">
+                <img src="../assets/img/packet tracer.png" alt="photo du premier fichier" style="height: auto; width: 100%;">
+                <img src="../assets/img/SAE31.png" alt="Photo du deuxieme fichier ">
+            </div>
+        </div>
+        <br>
+        <div class="titre-modal">
+            <button id="close-reseau" class="bouton-lien">Fermer</button> 
+        </div> 
+    </div>
+    <div class="modal" id="modal-php">
+        <h2>PHP</h2> 
+        <div style="display: flex;">
+            <div style="width: 48%;">
+                <p>
+                    J'ai pu améliorer mes compétences en PHP grâce à un projet qui a duré toute l'année. J'ai travaillé sur un projet de gestion de bonnes pratiques pour une entreprise nommée <font COLOR="#ffea00">"Thales Alenia Space"</font>. Dans ce projet j'ai créé un site web pour les utilisateurs de l'entreprise. J'ai utilisé PHP, HTML, CSS et MySQL pour ce projet. J'ai dû créer une base de données pour stocker les bonnes pratiques, les programmes et les phases. J'ai également dû créer un système de filtrage pour les bonnes pratiques en fonction des programmes et des phases. J'ai également dû créer un système de recherche par mot-clé. J'ai également dû créer un système de suppression de bonnes pratiques. Apres tous cela j'ai dû créer un système de connexion et de déconnexion pour les utilisateurs.
+                </p>
+            </div>
+            <div style="width: 48%; background-color: black; border-radius: 15px;">
+                <img src="../assets/img/thales1.png" alt="photo de la connexion sur ce site" style="height: auto; width: 100%;">
+                <img src="../assets/img/thales.png" alt="photo du site en projet pour thales" style="height: auto; width: 100%;">
+            </div>
+        </div>
+        <br>
+        <div class="titre-modal">
+            <button id="close-php" class="bouton-lien">Fermer</button> 
+        </div> 
+    </div>
+    <div class="modal" id="modal-html">
+        <h2>Html & CSS</h2>
+        <p>J’ai pu améliorer mes connaissances en HTML et CSS grâce à un projet. J’ai créé un site en relation avec un thème de prédilection pour mon IUT en rapport avec Mercedes et leurs préparateurs car je suis un passionné automobile.
+            J’ai apprécié ce projet car j’ai pu y apprendre à utiliser correctement visual studio code , le code HTML et CSS. J’ai déjà eu des bases en HTML et CSS car ma sœur était une développeuse front end chez triotech. J’ai eu la chance de pouvoir faire un stage chez eux.
+        </p>
+        <a href="../mercedes/mercedes.html" class="liensite">Voici le site en question</a>
+        <iframe src="https://ohpapy.github.io/monsite/mercedes/mercedes.html" frameborder="0" width="100%" height="100%"></iframe>
+        <br>
+        <div class="titre-modal">
+            <button id="close-html" class="bouton-lien">Fermer</button> 
+        </div> 
+    </div>
+    <div class="modal" id="modal-comm">
+        <h2>Communication</h2> 
+        <div style="display: flex;">
+            <div style="width: 45%; margin: 2%;">
+                <p>
+                    Le 17 novembre, nous avons eu l'occasion de découvrir le métier d’administrateur réseau grâce à une interview avec Bruno Banchi, un expert de l'infrastructure informatique, actuellement en poste chez Light & Wonder. L'entretien s'est déroulé à Nice, au 36 Avenue Jean Médecin, de 14H00 à 15H00. <br>
+
+                    Il a une vaste expérience dans le domaine de l'administration réseau. Son parcours professionnel inclut des postes dans plusieurs entreprises notables : L & W (2023 - aujourd’hui), Scientific Games (2010 - 2023), Bally (2006 - 2010), MCC (2000 - 2006), et SMCI (1997 - 2000). <br><br>
+                    
+                    Au cours de sa carrière, Bruno a acquis une expertise dans plusieurs outils et langages de programmation cruciaux pour son métier, notamment Csharp (C++ / Javascript), SQL (Base de Donnée), PowerShell (Windows), VMware, et PRA (Protection). Il a également une expérience significative en consulting et en management. <br> <br>
+                    
+                    Les responsabilités d’un administrateur réseau sont variées et essentielles au bon fonctionnement des systèmes informatiques. Bruno a décrit ses principales tâches, qui incluent la mise en place du réseau, la sécurité du réseau, la gestion du GDPR (Règlement Général sur la Protection des Données) ainsi que les déplacements et missions sur le terrain. 
+                    
+                    Il a également partagé les défis qu’il rencontre dans son travail quotidien, notamment la recherche et l’analyse des solutions techniques et la gestion des créneaux horaires pour les différentes tâches. <br> <br>
+                    
+                    Cette interview a offert une perspective précieuse sur le métier d’administrateur réseau, illustrée par le parcours diversifié et les compétences approfondies de Bruno Banchi.
+                </p>
+            </div>
+            <div style="width: 50%;">
+                <embed src="./INTERVIEW.pdf" type="application/pdf" style="height: 100%; width: 100%;"/>
+            </div>
+        </div>
+        <br>
+        <div class="titre-modal">
+            <button id="close-comm" class="bouton-lien">Fermer</button> 
+        </div> 
+    </div>
+    <div class="modal" id="modal-bl">
+        <h2>Boucle locale</h2> 
+        <div style="display: flex;">
+            <div style="width: 45%; margin: 2%;">
+                <p>
+                    Le domaine de la boucle locale chez Orange concerne principalement les réseaux de télécommunications reliant les abonnés finaux aux infrastructures du réseau. Ce travail exige une combinaison de compétences techniques, relationnelles et organisationnelles pour garantir la qualité et la continuité des services proposés par l'opérateur.
+                    <br>
+                    <br>
+                    Les techniciens de la boucle locale travaillent principalement sur le terrain, avec des déplacements fréquents pour intervenir directement chez les clients ou sur les équipements de réseau. Ils doivent également être disponibles pour des astreintes en cas de pannes urgentes.
+                    <br>
+                    <br>
+                    Ces compétences, alliées à un sens du détail et une volonté d’offrir un service de qualité, sont essentielles pour assurer la continuité et la fiabilité des services de télécommunications dans la boucle locale d’Orange.
+                    <br>
+                    <br>
+                    Pour vous expliquer, ici nous avons effectués une intervention sur un câble 900 paires donc un cable cuivre, qui se situe à Saint-Laurent-du-Var. Plusieurs clients étaient en panne car le câble était imbibé d'eau. Nous avons changé les raccords et nous avons pu rétabli les clients. 
+                    <br>
+                    <br>
+                    Pour plus d'informations, vous pouvez consulter le fichier PDF ci-dessous qui est mon rappport d'alternance. Vous y trouverez des informations sur mon entreprise, mes missions et mes compétences acquises.
+                    <br>
+                    <br>
+                </p>
+                <a href="#" class="liensite"><img src="../assets/img/telecharger.png" alt="lien du rapport d'alternance"></a>
+            </div>
+            <div style="width: 50%;">
+                <img src="../assets/img/900p.JPEG" alt="photo d'un cable 900 paire" style="width: 100%; height: auto;">
+            </div>
+        </div>
+        <br>
+        <div class="titre-modal">
+            <button id="close-bl" class="bouton-lien">Fermer</button> 
+        </div> 
+    </div>
+    <div class="modal" id="modal-pentest">
+        <h2>Test d'intrusion</h2> 
+        <div style="display: flex;">
+            <div style="width: 45%; margin: 2%;">
+                <p>
+                    <H3>Définition d'un pentest</H3>
+                    <br>
+                    Un pentest (ou test d'intrusion) est une méthode utilisée pour évaluer la sécurité d’un système informatique en simulant une attaque réelle. L’objectif est d’identifier les vulnérabilités exploitées par des pirates (malwares, failles réseau, erreurs de configuration, etc.), et de proposer des solutions concrètes pour les corriger avant qu’un véritable attaquant ne les découvre.
+                    <br>
+                    Il s'agit donc d'une démarche préventive et éthique, souvent réalisée avec l'accord préalable du propriétaire du système, dans le respect de la législation et des bonnes pratiques en cybersécurité.
+                    <br>
+                    <br>
+                    <h3>Résumé du projet</h3>
+                    <br>
+                    Dans le cadre d’un projet universitaire, un test d’intrusion (pentest) a été réalisé sur deux machines interconnectées dans les réseaux 172.18.0.0/16 et 172.19.0.0/16. L’objectif était d’identifier les vulnérabilités présentes et de proposer des mesures correctives pour renforcer la sécurité du système.
+                    <br>
+                    Deux principales failles ont été découvertes : une vulnérabilité critique sur une version obsolète de Samba (CVE-2017-7494), permettant un accès root à distance, et une faille d’injection de commande sur une application web DVWA, accessible avec des identifiants par défaut (admin/password).
+                    <br>
+                    Des outils comme Nmap, Metasploit, Proxychains et Crontab ont été utilisés pour scanner les machines, exploiter les failles, établir un accès persistant (reverse shell), et démontrer l’ampleur des risques encourus.
+                    <br>
+                    Le rapport recommande notamment de mettre à jour les logiciels, de renforcer la gestion des mots de passe, et de filtrer les entrées utilisateurs pour éviter les injections de commandes.
+                    <br>
+                    Ce projet a permis de mettre en pratique les connaissances théoriques acquises en cours, tout en soulignant l'importance cruciale de la cybersécurité dans le monde professionnel actuel. Il a également renforcé ma compréhension des enjeux liés à la sécurité des systèmes d'information et m'a permis de développer des compétences techniques essentielles.
+                    <br>
+                </p>
+                <a href="./Pentest-Boschian-Mathis.pdf" class="liensite"><img src="../assets/img/telecharger.png" alt="lien du rapport d'alternance"></a>
+            </div>
+            <div style="width: 50%;">
+                <embed src="./Pentest-Boschian-Mathis.pdf" type="application/pdf" style="height: 100%; width: 100%;"/>
+            </div>
+        </div>
+        <br>
+        <div class="titre-modal">
+            <button id="close-pentest" class="bouton-lien">Fermer</button> 
+        </div> 
+    </div>
+    <div class="homebas">
+        <a href="../index.html" class="homebastext">Accueil</a>
+    </div>
+    <script type="text/javascript" src="../assets/js/slick/jquery.min.js"></script>
+    <script type="text/javascript" src="../assets/js/slick/slick.min.js"></script>
+    <script type="text/javascript" src="../assets/js/portfolio.js"></script>
+</body>
+</html>
