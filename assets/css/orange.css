@@ -29,13 +29,17 @@ body {
     margin-left: 5%;
     margin-right: 5%;
     margin-top: 5%;
-    text-align: center;
     margin-bottom: 5%;
     border-radius: 1%;
     padding-left: 5%;
     padding-right: 5%;
     padding-top: 2%;
     padding-bottom: 2%;
+    text-align: justify;  
+}
+h2{
+    text-align: center;
+    font-size: 30px;
 }
 .bvn{
     margin-left: 5%;

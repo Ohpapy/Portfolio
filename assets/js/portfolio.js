@@ -87,3 +87,19 @@ closeModalbl.addEventListener('click', function() {
     const modalBg = document.querySelector('#modal-bg');
     modalBg.classList.remove('active');
 });
+
+const pentest = document.querySelector('#pentest');
+pentest.addEventListener('click', function() {
+    const modalpentest = document.querySelector('#modal-pentest');
+    modalpentest.classList.add('active');
+    const modalBg = document.querySelector('#modal-bg');
+    modalBg.classList.add('active');
+});
+
+const closeModalpentest = document.querySelector('#close-pentest');
+closeModalpentest.addEventListener('click', function() {
+    const modalpentest = document.querySelector('#modal-pentest');
+    modalpentest.classList.remove('active');
+    const modalBg = document.querySelector('#modal-bg');
+    modalBg.classList.remove('active');
+});
