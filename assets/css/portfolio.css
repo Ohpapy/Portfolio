@@ -1,4 +1,4 @@
-@import url('../assets/css/base.css');
+@import url('base.css');
 
 /* Portfolio Specific Styles */
 .portfolio-grid {
@@ -120,20 +120,4 @@
 
 .project-links img:hover {
   transform: scale(1.1);
-}
-
-/* Utility Header for page */
-.page-header {
-  text-align: center;
-  padding: 10rem 0 4rem;
-}
-
-.page-header h1 {
-  font-size: 4rem;
-  margin-bottom: 1rem;
-}
-
-.page-header p {
-  color: var(--text-muted);
-  font-size: 1.2rem;
 }
