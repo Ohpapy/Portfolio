@@ -1,118 +1,54 @@
-body { 
-    font-family:Georgia;
-    background: #212121;
-    font-size:22px;
-    line-height: 32px;
-    color: #ffffff;
-    word-wrap:break-word !important;
-    font-family: 'Open Sans', sans-serif;
-}
-.page-header {
-    text-align: center;
-    color: black;
-    text-shadow: 1px 1px 0 #000;
-    background-color: #FFA500;
-    height: 100px;
-    padding-top: 50px;
-    bottom: 0;
-    border-radius: 8px;
-    }
+@import url('../assets/css/base.css');
 
-.titre {
-    font-size: 100px;
-    margin: 0;
-    text-align: center;
+/* Orange Page Specific Styles */
+.alternance-hero {
+  background: linear-gradient(rgba(10, 10, 12, 0.7), rgba(10, 10, 12, 0.7)), url('../assets/img/Orange_logo.svg.png');
+  /* Assuming logo or similar for bg */
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-.presentation{
-    background-color: #444444;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    border-radius: 1%;
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-top: 2%;
-    padding-bottom: 2%;
-    text-align: justify;  
-}
-h2{
-    text-align: center;
-    font-size: 30px;
-}
-.bvn{
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-top: 5%;
-    text-align: center;
-    margin-bottom: 5%;
-}
-.homebas{
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    background-color: #FFA500;
-    text-align: center;
+.map-container {
+  overflow: hidden;
+  border-radius: 20px;
+  border: 1px solid var(--glass-border);
 }
 
-.homebastext{
-    text-decoration: none;
-    color: black;
+.media-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-top: 3rem;
 }
-::-webkit-scrollbar {
-    width: 10px;
-    background-color: #444444;
+
+.media-item {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid var(--glass-border);
+}
+
+.media-item img,
+.media-item video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.media-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 1.5rem;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .media-grid {
+    grid-template-columns: 1fr;
   }
-
-  ::-webkit-scrollbar-thumb {
-    background-color: #2d2d2d;
-  }
-
-  ::-webkit-scrollbar-thumb:hover {
-    background-color: #000000; 
-  }
-
-  .bouton-lien {
-    background-color: #FFA500;
-    border: 0.2px solid #FFA500;
-    border-radius: 5px;
-    padding: 3px;
-    color: rgb(0, 0, 0);
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 100%;
-    text-align: right;
-    text-decoration: none;
-  }
-  .img {
-    width: 100%;
-    height: auto;
-  }
-  .video {
-    width:100%;
-    height:50%;
 }
-
-  @media screen and (max-width: 768px) {
-    .titre {
-      font-size: 50px;
-    }
-    body {
-      font-size: 15px;
-      line-height: 28px;
-    }
-  }
-
-  @media screen and (max-width: 480px) {
-    /* Styles à appliquer lorsque la largeur de l'écran est inférieure ou égale à 480px */
-    .html,
-    .travaux {
-      height: 100px;
-      margin: 0 5px;
-    }
-
-    .modal {
-      width: 95%;
-      margin: 10px auto;
-    }
-  }

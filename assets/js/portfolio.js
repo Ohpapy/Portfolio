@@ -1,105 +1,55 @@
-$('#carousel').slick({
-    infinite: true,
-    slidesToShow: 3,
-    slidesToScroll: 3,
-});
+/**
+ * Portfolio Page Specific JS
+ * Handles project card clicks and modal toggling.
+ */
 
-if (window.matchMedia("(max-width: 768px)").matches) {
-    $('.single-item').slick();
-}
+document.addEventListener('DOMContentLoaded', () => {
+    const projectCards = document.querySelectorAll('.project-card');
+    const modals = document.querySelectorAll('.modal');
+    const closeButtons = document.querySelectorAll('.close-modal');
 
-const reseau = document.querySelector('#reseau');
-reseau.addEventListener('click', function() {
-    const modalReseau = document.querySelector('#modal-reseau');
-    modalReseau.classList.add('active');
-    const modalBg = document.querySelector('#modal-bg');
-    modalBg.classList.add('active');
-});
+    // Open Modal
+    projectCards.forEach(card => {
+        card.addEventListener('click', () => {
+            const modalId = card.getAttribute('data-modal');
+            const targetModal = document.getElementById(modalId);
+            if (targetModal) {
+                targetModal.classList.add('active');
+                document.body.style.overflow = 'hidden'; // Prevent scrolling
+            }
+        });
+    });
 
-const closeModalReseau = document.querySelector('#close-reseau');
-closeModalReseau.addEventListener('click', function() {
-    const modalReseau = document.querySelector('#modal-reseau');
-    modalReseau.classList.remove('active');
-    const modalBg = document.querySelector('#modal-bg');
-    modalBg.classList.remove('active');
-});
+    // Close Modal
+    const closeModal = (modal) => {
+        modal.classList.remove('active');
+        document.body.style.overflow = ''; // Restore scrolling
+    };
 
-const php = document.querySelector('#php');
-php.addEventListener('click', function() {
-    const modalphp = document.querySelector('#modal-php');
-    modalphp.classList.add('active');
-    const modalBg = document.querySelector('#modal-bg');
-    modalBg.classList.add('active');
-});
+    closeButtons.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const modal = btn.closest('.modal');
+            closeModal(modal);
+        });
+    });
 
-const closeModalphp = document.querySelector('#close-php');
-closeModalphp.addEventListener('click', function() {
-    const modalphp = document.querySelector('#modal-php');
-    modalphp.classList.remove('active');
-    const modalBg = document.querySelector('#modal-bg');
-    modalBg.classList.remove('active');
-});
+    // Close on background click
+    modals.forEach(modal => {
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                closeModal(modal);
+            }
+        });
+    });
 
-const html = document.querySelector('#html');
-html.addEventListener('click', function() {
-    const modalhtml = document.querySelector('#modal-html');
-    modalhtml.classList.add('active');
-    const modalBg = document.querySelector('#modal-bg');
-    modalBg.classList.add('active');
-});
-
-const closeModalhtml = document.querySelector('#close-html');
-closeModalhtml.addEventListener('click', function() {
-    const modalhtml = document.querySelector('#modal-html');
-    modalhtml.classList.remove('active');
-    const modalBg = document.querySelector('#modal-bg');
-    modalBg.classList.remove('active');
-});
-
-const comm = document.querySelector('#comm');
-comm.addEventListener('click', function() {
-    const modalcomm = document.querySelector('#modal-comm');
-    modalcomm.classList.add('active');
-    const modalBg = document.querySelector('#modal-bg');
-    modalBg.classList.add('active');
-});
-
-const closeModalcomm = document.querySelector('#close-comm');
-closeModalcomm.addEventListener('click', function() {
-    const modalcomm = document.querySelector('#modal-comm');
-    modalcomm.classList.remove('active');
-    const modalBg = document.querySelector('#modal-bg');
-    modalBg.classList.remove('active');
-});
-
-const bl = document.querySelector('#bl');
-bl.addEventListener('click', function() {
-    const modalbl = document.querySelector('#modal-bl');
-    modalbl.classList.add('active');
-    const modalBg = document.querySelector('#modal-bg');
-    modalBg.classList.add('active');
-});
-
-const closeModalbl = document.querySelector('#close-bl');
-closeModalbl.addEventListener('click', function() {
-    const modalbl = document.querySelector('#modal-bl');
-    modalbl.classList.remove('active');
-    const modalBg = document.querySelector('#modal-bg');
-    modalBg.classList.remove('active');
-});
-
-const pentest = document.querySelector('#pentest');
-pentest.addEventListener('click', function() {
-    const modalpentest = document.querySelector('#modal-pentest');
-    modalpentest.classList.add('active');
-    const modalBg = document.querySelector('#modal-bg');
-    modalBg.classList.add('active');
-});
-
-const closeModalpentest = document.querySelector('#close-pentest');
-closeModalpentest.addEventListener('click', function() {
-    const modalpentest = document.querySelector('#modal-pentest');
-    modalpentest.classList.remove('active');
-    const modalBg = document.querySelector('#modal-bg');
-    modalBg.classList.remove('active');
+    // Close on Escape key
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+            const activeModal = document.querySelector('.modal.active');
+            if (activeModal) {
+                closeModal(activeModal);
+            }
+        }
+    });
 });
