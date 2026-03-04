@@ -3,71 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Autour+One&family=Dela+Gothic+One&family=Oswald:wght@500&display=swap" rel="stylesheet">
+    <title>Mathis Boschian | Portfolio</title>
     <link rel="stylesheet" href="./assets/css/index.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Autour+One&family=Dela+Gothic+One&family=Oswald:wght@500&family=Poppins:wght@800&display=swap" rel="stylesheet">
-    <title>Portfolio</title>
+    <!-- Font Awesome for Social Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <div id="container">
-        <nav>
+
+    <nav>
+        <div class="container">
+            <div class="logo">
+                <img src="./assets/img/LOGO MATHIS.png" alt="Mathis Boschian Logo" height="40">
+            </div>
             <ul>
                 <li><a href="index.html">Accueil</a></li>
                 <li><a href="./timeline/timeline.html">Parcours</a></li>
                 <li><a href="./portfolio/portfolio.html">Portfolio</a></li>
                 <li><a href="./portfolio/Orange.html">Alternance</a></li>
-                <li><a href="#">Passion</a>
-                <ul>
-                    <li><a href="./mercedes/mercedes.html">Le site</a></li>
-                    <li><a href="./mercedes/css.html">CSS</a></li>
-                    <li><a href="./mercedes/html.html">HTML</a></li>
-                </ul>        
-                </li>
             </ul>
-        </nav>
-    <div class="logo">
-        <img src="./assets/img/LOGO MATHIS.png" alt="LOGO" class="logoimg" style="width: 100px; height: auto;">
-    </div>
-    <div class="textebvn">
-        <p class="family"> Bienvenue !</p>
-        <p class="family typewriter">Je m'appelle Mathis Boschian</p>
-    </div>
-    </div>
-        <div class="center">
-            <div class="centered-content">
-                <p>Je suis attiré par le monde des réseaux depuis petit et plus particulièrement depuis mon alternance chez Orange. J'étudie actuellement en BUT Réseaux et Télécommunications ce qui s'accorde avec mon alternance.
-                <br>
-                <br>
-                Par ailleurs, je suis passionné par différents sports tels que le ski, l'automobile comme les rallyes mais aussi des sports comme le DH et l'enduro en VTT.</p> 
-                <br>
-                <br>
-            </div>
         </div>
-    </div>
-    <div class="container">
-        <a href="https://www.instagram.com/mathis.bsh/" class="inst">
-            <div class="insta">
+    </nav>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content reveal">
+                <p>Bienvenue sur mon portfolio</p>
+                <h1>Je m'appelle <span class="typewriter">Mathis Boschian</span></h1>
+                <p>Passionné par les réseaux et télécommunications, actuellement en alternance chez Orange.</p>
+                
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/mathis-boschian/" class="social-icon" target="_blank">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://www.instagram.com/mathis.bsh/" class="social-icon" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
             </div>
-        </a>
-        <a href="https://www.linkedin.com/in/mathis-boschian/" class="inst">
-            <div class="linkedin"></div>
-        </a>
-    </div>
-    <div class="contact-form">
-        <h3 style="color: white;">Contactez-moi</h3>
-        <form action="mailto:pourmonsiteohpapy@gmail.com" method="post" enctype="text/plain" style="width: 100%;"></form>
-            <label for="name">Nom:</label>
-            <input type="text" id="name" name="name" required style="width: 80%;">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required style="width: 80%;">
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required style="width: 80%;"></textarea>
-            <button type="submit" class="middle" style="color: black; width: 100%;">Envoyer</button>
-        </form>
-    </div>
+        </section>
+
+        <section class="container section">
+            <div class="glass reveal" style="padding: 3rem; text-align: center;">
+                <h2 class="heading" style="font-size: 2.5rem; margin-bottom: 1.5rem;">À Propos</h2>
+                <p style="max-width: 800px; margin: 0 auto; color: var(--text-muted); font-size: 1.1rem;">
+                    Je suis attiré par le monde des réseaux depuis petit et plus particulièrement depuis mon alternance chez <strong>Orange</strong>. 
+                    J'étudie actuellement en BUT Réseaux et Télécommunications ce qui s'accorde parfaitement avec mon parcours professionnel.
+                    <br><br>
+                    En dehors de la technique, je suis un grand passionné de sport : du ski aux sensations fortes de l'automobile et du VTT (DH et Enduro).
+                </p>
+            </div>
+        </section>
+
+        <section id="contact" class="container section">
+            <div class="reveal" style="text-align: center; margin-bottom: 3rem;">
+                <h2 class="heading" style="font-size: 2.5rem;">Contactez-moi</h2>
+                <p style="color: var(--text-muted);">Une question ? Un projet ? N'hésitez pas à m'envoyer un message.</p>
+            </div>
+            
+            <div class="glass contact-section reveal" style="padding: 2.5rem;">
+                <form action="mailto:pourmonsiteohpapy@gmail.com" method="post" enctype="text/plain">
+                    <div class="form-group">
+                        <label for="name">Nom complet</label>
+                        <input type="text" id="name" name="name" class="form-input" placeholder="Votre nom" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Adresse Email</label>
+                        <input type="email" id="email" name="email" class="form-input" placeholder="votre@email.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" class="form-input" rows="5" placeholder="Comment puis-je vous aider ?" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit">Envoyer le message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer style="padding: 4rem 0; text-align: center; border-top: 1px solid var(--glass-border);">
+        <p style="font-size: 0.9rem; color: var(--text-muted);">© 2026 Mathis Boschian. Tous droits réservés.</p>
+    </footer>
+
+    <script src="./assets/js/main.js"></script>
 </body>
 </html>
